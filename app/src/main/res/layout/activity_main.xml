@@ -8,7 +8,7 @@
     android:layout_height="match_parent"
     android:padding="16dp"
     tools:context=".MainActivity"
-    android:background="?android:attr/colorBackground">
+    android:background="@color/soft_yellow">
 
     <!-- Location Name -->
     <TextView
@@ -36,37 +36,54 @@
         android:layout_marginTop="4dp"/>
 
     <!-- Temperature -->
+
+    <!-- Weather Description -->
+
+    <!-- Forecast Row -->
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="133dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dateTimeText"
+        app:srcCompat="@drawable/cloudy" />
+
     <TextView
         android:id="@+id/temperatureText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
         android:text="31°C"
         android:textAppearance="@style/TextAppearance.Material3.DisplayMedium"
         android:textColor="?android:textColorPrimary"
-        app:layout_constraintTop_toBottomOf="@id/dateTimeText"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp"/>
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dateTimeText" />
 
-    <!-- Weather Description -->
     <TextView
         android:id="@+id/weatherConditionText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
         android:text="Partly Cloudy"
         android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
         android:textColor="?android:textColorSecondary"
-        app:layout_constraintTop_toBottomOf="@id/temperatureText"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp"/>
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/temperatureText" />
 
-    <!-- Forecast Row -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/forecastRow"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="25dp"
         app:layout_constraintTop_toBottomOf="@id/weatherConditionText"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
@@ -108,5 +125,8 @@
             app:layout_constraintEnd_toEndOf="parent"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

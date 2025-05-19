@@ -2,4 +2,23 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <!--    day time -->
+    <color name="soft_yellow">#ffffba</color>
+    <color name="light_blue">#bae1ff</color>
+    <color name="cloudy">#aaaaaa</color>
+    <color name="muted_blue">#0e2c5f</color>
+    <color name="light_beige">#eed9c4</color>
+    <!--    morning evening-->
+    <color name="warm_orange">#ffd545</color>
+    <color name="soft_pink">#E89EB8</color>
+    <!--    night-->
+    <color name="dark_blue">#111184</color>
+    <color name="deep_purple">#8B008B</color>
+    <color name="dark_gray">#6d8196</color>
+    <!--    rainy-->
+    <color name="gray">#A49A87</color>
+    <!--    stormy-->
+    <color name="deep_blue">#305CDE</color>
+    <color name="dark_purple">#6C3BAA</color>
+
 </resources>
