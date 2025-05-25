@@ -43,12 +43,12 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="150dp"
-        android:layout_height="133dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="79dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="12dp"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.63"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/dateTimeText"
         app:srcCompat="@drawable/cloudy" />
@@ -57,8 +57,8 @@
         android:id="@+id/temperatureText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="88dp"
-        android:text="31°C"
+        android:layout_marginTop="40dp"
+        android:text="31°"
         android:textAppearance="@style/TextAppearance.Material3.DisplayMedium"
         android:textColor="?android:textColorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
@@ -126,7 +126,19 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-
+    <!--   get location-->
+    <Button
+        android:id="@+id/btnLocation"
+        style="@style/Widget.Material3.Button.IconButton"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="20dp"
+        app:icon="@drawable/ic_my_location"
+        app:iconSize="42dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
